@@ -16,15 +16,14 @@
  const AlbumSchema = new Schema({
 
      title: String,
-     date: Number,
+     date: Date,
      copiesSold: Number,
      numberTracks: Number,
      image: String,
      revenue: Number
 
  });
+ //this is a schema to a subdoc not a actual model
+ //const Album = mongoose.model('album', AlbumSchema);
 
- const Album = mongoose.model('album', AlbumSchema);
-
- module.exports = Album;
- 
+ module.exports = AlbumSchema;
