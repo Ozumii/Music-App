@@ -31,7 +31,7 @@ const ArtistSchema = new Schema({
     netWorth: Number, 
     labelName: String,
     retired: Boolean,
-    Albums: [AlbumSchema]
+    albums: [AlbumSchema]
 
 
 });
