@@ -7,8 +7,8 @@ const Artist = require('../models/artist');
  */
 module.exports = (_ids) => {
     const query = Artist.updateMany(
-        {_id: {$in: _ids }},
-        {retired: false }
+        { _id: { $in: _ids } },
+        { retired: false }
     );
     return query;
 };
